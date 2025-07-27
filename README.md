@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tanishq Thakkar - Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Features
 
+- **Modern React Stack**: Built with React 19, TypeScript, and Vite
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Smooth Animations**: Custom animations and transitions
+- **Dark Mode Support**: Built-in dark/light theme switching
+- **Component Library**: Reusable UI components with TypeScript
+- **Performance Optimized**: Fast loading with Vite build system
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 19, TypeScript
+- **Styling**: Tailwind CSS v3
+- **Build Tool**: Vite
+- **Routing**: React Router DOM
+- **Icons**: Lucide React
+- **State Management**: React Query (TanStack Query)
+- **Fonts**: Google Fonts (Playfair Display, Inter)
+
+## 📦 Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/tanishq-thakkar/portfolio-website.git
+cd portfolio-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Start the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## Learn More
+## 🏗️ Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Base UI components (Button, Card, etc.)
+│   ├── Hero.tsx        # Hero section
+│   ├── About.tsx       # About section
+│   ├── Projects.tsx    # Projects showcase
+│   ├── Contact.tsx     # Contact form
+│   ├── Navigation.tsx  # Navigation bar
+│   └── Footer.tsx      # Footer component
+├── pages/              # Page components
+├── hooks/              # Custom React hooks
+├── App.tsx             # Main app component
+├── main.tsx            # App entry point
+└── index.css           # Global styles
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design System
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The project uses a comprehensive design system with:
+- **Color Palette**: HSL-based color system with dark mode support
+- **Typography**: Playfair Display for headings, Inter for body text
+- **Spacing**: Consistent spacing scale
+- **Components**: Reusable UI components with TypeScript interfaces
 
-## Deploy on Vercel
+## 📱 Sections
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Hero**: Introduction with animated background
+- **About**: Skills, experience, and personal information
+- **Projects**: Showcase of featured projects
+- **Contact**: Contact form and information
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Deployment
+
+The project can be deployed to any static hosting service:
+
+```bash
+npm run build
+```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 Author
+
+**Tanishq Thakkar**
+- GitHub: [@tanishq-thakkar](https://github.com/tanishq-thakkar)
+- Portfolio: [tanishqthakkar.com](https://tanishqthakkar.com)
