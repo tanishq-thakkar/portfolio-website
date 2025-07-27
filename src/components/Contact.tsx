@@ -1,8 +1,8 @@
-import { Button } from "../components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
-import { Input } from "../components/ui/input";
-import { Textarea } from "../components/ui/textarea";
-import { Label } from "../components/ui/label";
+import { Button } from "./ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
+import { Label } from "./ui/label";
 import { MapPin, Mail, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "../hooks/use-toast";
@@ -39,7 +39,7 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to start a project together? I'd love to hear from you. Send me a message and I'll respond as soon as possible.
+            I'm actively seeking opportunities after Spring 2026 graduation. Let's discuss how I can contribute to your team!
           </p>
         </div>
 
@@ -54,7 +54,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-muted-foreground">john.doe@example.com</p>
+                    <p className="text-muted-foreground">thakkatq@mail.uc.edu</p>
                   </div>
                 </div>
               </CardContent>
@@ -68,7 +68,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <p className="text-muted-foreground">(859) 539-6956</p>
                   </div>
                 </div>
               </CardContent>
@@ -82,7 +82,28 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold">Location</h3>
-                    <p className="text-muted-foreground">San Francisco, CA</p>
+                    <p className="text-muted-foreground">Cincinnati, Ohio</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border/50 hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Mail className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">LinkedIn</h3>
+                    <a 
+                      href="https://www.linkedin.com/in/tanishqthakkar/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline"
+                    >
+                      linkedin.com/in/tanishqthakkar
+                    </a>
                   </div>
                 </div>
               </CardContent>
@@ -132,7 +153,7 @@ const Contact = () => {
                       name="message"
                       value={formData.message}
                       onChange={handleInputChange}
-                      placeholder="Tell me about your project..."
+                      placeholder="Tell me about your opportunity..."
                       rows={6}
                       required
                       className="bg-background border-border focus:border-primary resize-none"

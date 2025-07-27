@@ -4,15 +4,16 @@ import { Code, Palette, Zap, Users } from "lucide-react";
 
 const About = () => {
   const skills = [
-    { name: "Frontend Development", level: 90, icon: Code },
-    { name: "UI/UX Design", level: 85, icon: Palette },
-    { name: "Backend Development", level: 80, icon: Zap },
+    { name: "Full Stack Development", level: 95, icon: Code },
+    { name: "Cloud & DevOps", level: 90, icon: Zap },
+    { name: "AI/ML Technologies", level: 85, icon: Palette },
     { name: "Team Collaboration", level: 95, icon: Users }
   ];
 
   const technologies = [
-    "JavaScript", "TypeScript", "React", "Vue.js", "Node.js", "Python",
-    "PostgreSQL", "MongoDB", "Docker", "AWS", "Figma", "Tailwind CSS"
+    "React", "TypeScript", "Node.js", "Java", "Python", "C++", "Go", "Rust",
+    "AWS", "Azure", "GCP", "Docker", "Kubernetes", "PostgreSQL", "MongoDB",
+    "Spring Boot", "Flask", "Express", "PyTorch", "Terraform", "Jenkins"
   ];
 
   return (
@@ -23,7 +24,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Passionate developer with 5+ years of experience creating digital solutions that make a difference.
+            Computer Science student at University of Cincinnati with a passion for building scalable software solutions.
           </p>
         </div>
 
@@ -32,15 +33,15 @@ const About = () => {
           <div className="space-y-6">
             <div className="prose prose-lg prose-invert max-w-none">
               <p className="text-muted-foreground leading-relaxed">
-                I'm a passionate full-stack developer and designer with over 5 years of experience 
-                building web applications that combine beautiful design with robust functionality. 
-                I love turning complex problems into simple, elegant solutions.
+                I'm a Computer Science student at the University of Cincinnati with a 3.63 GPA, currently pursuing a 
+                Bachelor of Science in Computer Science with a Software Engineering Certificate. I'm also enrolled in 
+                the Accelerated Master's program in Computer Science.
               </p>
               
               <p className="text-muted-foreground leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, contributing to 
-                open-source projects, or mentoring aspiring developers. I believe in continuous 
-                learning and staying up-to-date with the latest industry trends.
+                With experience as a Software Engineer Intern at companies like Sensforge and Phillips Edison & Company, 
+                I've developed expertise in full-stack development, cloud infrastructure, and AI/ML technologies. 
+                I'm passionate about creating efficient, scalable solutions that solve real-world problems.
               </p>
             </div>
 
@@ -85,20 +86,23 @@ const About = () => {
 
             <Card className="bg-card border-border/50">
               <CardContent className="p-6">
-                <h3 className="text-2xl font-semibold mb-4">Experience Highlights</h3>
+                <h3 className="text-2xl font-semibold mb-4">Education & Recognition</h3>
                 <div className="space-y-4">
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="font-semibold text-lg">Senior Full Stack Developer</h4>
-                    <p className="text-primary font-medium">TechCorp Inc. • 2022 - Present</p>
+                    <h4 className="font-semibold text-lg">University of Cincinnati</h4>
+                    <p className="text-primary font-medium">Bachelor of Science in Computer Science • 2026</p>
                     <p className="text-muted-foreground text-sm">
-                      Leading development of enterprise applications serving 100k+ users
+                      GPA: 3.63 • Honors, Dean's List • University Honors Scholar
+                    </p>
+                    <p className="text-muted-foreground text-sm">
+                      Software Engineering Certificate • Accelerated Master's Program
                     </p>
                   </div>
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="font-semibold text-lg">Frontend Developer</h4>
-                    <p className="text-primary font-medium">StartupXYZ • 2020 - 2022</p>
+                    <h4 className="font-semibold text-lg">Relevant Coursework</h4>
                     <p className="text-muted-foreground text-sm">
-                      Built responsive web applications and design systems
+                      Software Engineering, AI Principles, Cloud Computing, Database Design, 
+                      Data Structures & Algorithms, Computer Networks, Operating Systems
                     </p>
                   </div>
                 </div>

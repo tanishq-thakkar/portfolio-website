@@ -6,28 +6,28 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
-      demoUrl: "#",
-      githubUrl: "#",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop"
-    },
-    {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      technologies: ["Vue.js", "Express", "Socket.io", "PostgreSQL", "Docker"],
-      demoUrl: "#",
-      githubUrl: "#",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop"
-    },
-    {
-      title: "AI-Powered Analytics Dashboard",
-      description: "An intelligent analytics dashboard that provides insights using machine learning algorithms and beautiful data visualizations.",
-      technologies: ["Python", "React", "TensorFlow", "D3.js", "FastAPI"],
+      title: "OpenAI-powered Astrology Website",
+      description: "Designed a modular, event-driven backend for a real-time OpenAI-powered astrology startup, leveraging Azure Event Grid and Service Bus to decouple transcription and summarization workflows, enabling scalable, asynchronous processing.",
+      technologies: ["Azure Functions", "Cosmos DB", "Event Grid", "Service Bus", "OpenAI API", "Python"],
       demoUrl: "#",
       githubUrl: "#",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop"
+    },
+    {
+      title: "Real Estate Data Scraping Application",
+      description: "Engineered automated scripts using Java 8 and Selenium WebDriver to scrape data from multiple real estate websites, reducing manual effort by 40 hours per month for the analytics team.",
+      technologies: ["Java 8", "Selenium", "PostgreSQL", "Web Scraping", "Automation"],
+      demoUrl: "#",
+      githubUrl: "#",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=250&fit=crop"
+    },
+    {
+      title: "User Handling Application",
+      description: "Developed a user authentication system using Java Spring Boot and PostgreSQL, with a responsive React.js frontend. Secured user data using bcrypt for password hashing and JWT for stateless authentication.",
+      technologies: ["Spring Boot", "React.js", "PostgreSQL", "JWT", "bcrypt", "Java"],
+      demoUrl: "#",
+      githubUrl: "#",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop"
     }
   ];
 
@@ -39,7 +39,7 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills and passion for creating exceptional digital experiences.
+            Here are some of my recent projects that showcase my skills in full-stack development, cloud computing, and AI/ML technologies.
           </p>
         </div>
 

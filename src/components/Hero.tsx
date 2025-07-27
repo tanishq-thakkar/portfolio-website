@@ -32,12 +32,12 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-            Full Stack Developer & UI/UX Designer
+            Software Engineer & Computer Science Student
           </p>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-            Crafting beautiful, functional, and user-centered digital experiences 
-            with modern technologies and creative problem-solving.
+            Passionate full-stack developer with experience in React, Node.js, AWS, and AI/ML technologies. 
+            Currently pursuing a Bachelor of Science in Computer Science at University of Cincinnati with a 3.63 GPA.
           </p>
 
           {/* CTA Buttons */}
@@ -53,15 +53,21 @@ const Hero = () => {
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
-            <Button variant="ghost" size="icon" className="hover:text-primary hover:bg-primary/10">
-              <Github className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary hover:bg-primary/10">
-              <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary hover:bg-primary/10">
-              <Mail className="h-5 w-5" />
-            </Button>
+            <a href="https://github.com/tanishqthakkar" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="hover:text-primary hover:bg-primary/10">
+                <Github className="h-5 w-5" />
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/in/tanishqthakkar/" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="hover:text-primary hover:bg-primary/10">
+                <Linkedin className="h-5 w-5" />
+              </Button>
+            </a>
+            <a href="mailto:thakkatq@mail.uc.edu">
+              <Button variant="ghost" size="icon" className="hover:text-primary hover:bg-primary/10">
+                <Mail className="h-5 w-5" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>

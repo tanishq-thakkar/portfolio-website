@@ -1,86 +1,103 @@
-import { Button } from "../components/ui/button";
 import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
-    <footer className="bg-secondary/20 border-t border-border/50">
-      <div className="container mx-auto px-4 py-12">
+    <footer className="bg-secondary/20 py-12">
+      <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
-            <div className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Tanishq Thakkar
+            <div className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-fancy tracking-wider">
+              TT
             </div>
-            <p className="text-muted-foreground">
-              Full Stack Developer passionate about creating beautiful and functional web experiences.
+            <p className="text-muted-foreground max-w-sm">
+              Computer Science student at University of Cincinnati, passionate about building scalable software solutions 
+              and exploring new technologies.
             </p>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" className="hover:text-primary hover:bg-primary/10">
+              <a 
+                href="https://github.com/tanishqthakkar" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Github className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary hover:bg-primary/10">
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/tanishqthakkar/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Linkedin className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary hover:bg-primary/10">
+              </a>
+              <a 
+                href="mailto:thakkatq@mail.uc.edu"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Mail className="h-5 w-5" />
-              </Button>
+              </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Quick Links</h3>
-            <div className="space-y-2">
-              <button 
-                onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-muted-foreground hover:text-primary transition-colors"
-              >
-                About
-              </button>
-              <button 
-                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-muted-foreground hover:text-primary transition-colors"
-              >
-                Projects
-              </button>
-              <button 
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-muted-foreground hover:text-primary transition-colors"
-              >
-                Contact
-              </button>
-            </div>
+            <ul className="space-y-2">
+              <li>
+                <a 
+                  href="#hero" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#about" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#projects" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#contact" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Get In Touch</h3>
+            <h3 className="text-lg font-semibold">Contact Info</h3>
             <div className="space-y-2 text-muted-foreground">
-              <p>thakkatq@mail.uc.edu</p>
-              <p>+1 (859) 539-6956</p>
-              <p>Cincinnati, OH</p>
+              <p>Email: thakkatq@mail.uc.edu</p>
+              <p>Phone: (859) 539-6956</p>
+              <p>Location: Cincinnati, Ohio</p>
+              <p>Graduation: Spring 2026</p>
             </div>
-            <Button 
-              onClick={scrollToTop}
-              variant="outline" 
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            >
-              Back to Top
-            </Button>
           </div>
         </div>
 
+        {/* Bottom Bar */}
         <div className="border-t border-border/50 mt-8 pt-8 text-center">
-          <p className="text-muted-foreground flex items-center justify-center space-x-1">
-            <span>© {currentYear} Tanishq Thakkar. Made with</span>
-            <Heart className="h-4 w-4 text-red-500 fill-current" />
-            <span>and lots of coffee.</span>
+          <p className="text-muted-foreground text-sm">
+            © {new Date().getFullYear()} Tanishq Thakkar. Made with <Heart className="inline h-4 w-4 text-red-500" /> using React & TypeScript.
+          </p>
+          <p className="text-muted-foreground text-sm mt-2">
+            Actively seeking opportunities after Spring 2026 graduation.
           </p>
         </div>
       </div>
