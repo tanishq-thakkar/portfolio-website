@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../co
 import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
+import Typewriter from 'typewriter-effect';
 
 const Projects = () => {
   const projects = [
@@ -36,7 +37,18 @@ const Projects = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-            Featured Projects
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .pauseFor(1500)
+                  .typeString('Featured Projects')
+                  .start();
+              }}
+              options={{
+                cursor: '',
+                delay: 100,
+              }}
+            />
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Here are some of my recent projects that showcase my skills in full-stack development, cloud computing, and AI/ML technologies.

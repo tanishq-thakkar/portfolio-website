@@ -7,11 +7,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
-            <div className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-fancy tracking-wider">
+            <div className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-rounded tracking-wider">
               TT
             </div>
             <p className="text-muted-foreground max-w-sm">
-              Computer Science student at University of Cincinnati, passionate about building scalable software solutions 
+              CS @ University of Cincinnati.
+              Passionate about building scalable software solutions 
               and exploring new technologies.
             </p>
             <div className="flex space-x-4">
@@ -86,7 +87,6 @@ const Footer = () => {
               <p>Email: thakkatq@mail.uc.edu</p>
               <p>Phone: (859) 539-6956</p>
               <p>Location: Cincinnati, Ohio</p>
-              <p>Graduation: Spring 2026</p>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border/50 mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Tanishq Thakkar. Made with <Heart className="inline h-4 w-4 text-red-500" /> using React & TypeScript.
+            © {new Date().getFullYear()} Tanishq Thakkar. Made with <Heart className="inline h-4 w-4 text-red-500" /> and a lot of coffee.
           </p>
           <p className="text-muted-foreground text-sm mt-2">
             Actively seeking opportunities after Spring 2026 graduation.

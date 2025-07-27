@@ -18,6 +18,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'fancy': ['Playfair Display', 'serif'],
+				'rounded': ['Crimson Text', 'serif'],
 				'sans': ['Inter', 'system-ui', 'sans-serif'],
 			},
 			colors: {

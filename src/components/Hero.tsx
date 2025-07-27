@@ -1,6 +1,7 @@
 import { Button } from "../components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
+import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
   return (
@@ -20,24 +21,59 @@ const Hero = () => {
         <div className="animate-slide-up">
           {/* Profile Avatar */}
           <Avatar className="w-32 h-32 mx-auto mb-8 ring-4 ring-primary/50 animate-float">
-            <AvatarImage src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop" alt="Profile" />
-            <AvatarFallback className="text-2xl font-bold bg-gradient-to-br from-primary to-accent text-primary-foreground font-fancy">
+            <AvatarImage src="/images/profile.jpg" alt="Tanishq Thakkar" />
+            <AvatarFallback className="text-2xl font-bold bg-gradient-to-br from-primary to-accent text-primary-foreground font-rounded">
               TT
             </AvatarFallback>
           </Avatar>
 
-          {/* Name and Title */}
+          {/* Name and Title with Typewriter Effect */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent animate-glow">
-            Tanishq Thakkar
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString('Tanishq Thakkar')
+                  .pauseFor(1000)
+                  .start();
+              }}
+              options={{
+                cursor: '',
+                delay: 100,
+              }}
+            />
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-            Software Engineer & Computer Science Student
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .pauseFor(2000)
+                  .typeString('Software Engineer & Computer Science Student')
+                  .pauseFor(1000)
+                  .start();
+              }}
+              options={{
+                cursor: '|',
+                delay: 50,
+              }}
+            />
           </p>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-            Passionate full-stack developer with experience in React, Node.js, AWS, and AI/ML technologies. 
-            Currently pursuing a Bachelor of Science in Computer Science at University of Cincinnati with a 3.63 GPA.
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .pauseFor(4000)
+                  .typeString('Passionate Software developer with experience in Full Stack, Cloud and AI/ML technologies.')
+                  .pauseFor(500)
+                  .typeString(' Graduating with a B.S. Computer Science @ University of Cincinnati in April 2026.')
+                  .start();
+              }}
+              options={{
+                cursor: '|',
+                delay: 30,
+              }}
+            />
           </p>
 
           {/* CTA Buttons */}

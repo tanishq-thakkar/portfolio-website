@@ -82,7 +82,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold">Location</h3>
-                    <p className="text-muted-foreground">Cincinnati, Ohio</p>
+                    <p className="text-muted-foreground">USA - Open to relocation</p>
                   </div>
                 </div>
               </CardContent>
