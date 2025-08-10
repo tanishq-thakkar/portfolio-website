@@ -45,7 +45,7 @@ const About = () => {
           <div className="space-y-6">
             <div className="prose prose-lg prose-invert max-w-none">
               <p className="text-muted-foreground leading-relaxed">
-                I'm a Computer Science student at the University of Cincinnati with a 3.63 GPA, currently pursuing a 
+                I'm a Computer Science student at the University of Cincinnati, currently pursuing a 
                 Bachelor of Science in Computer Science with a Software Engineering Certificate. I'm also enrolled in 
                 the Accelerated Master's program in Computer Science.
               </p>
